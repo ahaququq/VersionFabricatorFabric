@@ -3,8 +3,10 @@
   "id": "version-fabricator",
   "version": "${version}",
   "name": "VersionFabricator",
-  "description": "Multi version API, made to generate no warnings in logs",
-  "authors": [],
+  "description": "Minecraft version independent modding API. Fabric/Quilt edition.",
+  "authors": [
+    "Ahaququq"
+  ],
   "contact": {},
   "license": "All-Rights-Reserved",
   "icon": "assets/version-fabricator/icon.png",
