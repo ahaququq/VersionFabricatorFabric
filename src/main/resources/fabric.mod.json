@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "id": "version-fabricator",
+  "version": "${version}",
+  "name": "VersionFabricator",
+  "description": "Multi version API, made to generate no warnings in logs",
+  "authors": [],
+  "contact": {},
+  "license": "All-Rights-Reserved",
+  "icon": "assets/version-fabricator/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "org.github.ahaququq.versionFabricator.client.VersionFabricatorClient"
+    ],
+    "main": [
+      "org.github.ahaququq.versionFabricator.VersionFabricator"
+    ]
+  },
+  "mixins": [
+    "versionFabricator.mixins.json",
+    {
+      "config": "versionFabricator.client.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
